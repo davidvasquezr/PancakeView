@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" x:Class="PancakeView.MainPage"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <StackLayout Padding="25, 40" BackgroundColor="AliceBlue">
+        <yummy:PancakeView BackgroundColor="MidnightBlue" CornerRadius="15,15,0,15" HorizontalOptions="StartAndExpand" Padding="10, 5" >
+           <Label Text="Hola" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" />
+        </yummy:PancakeView>
+        <yummy:PancakeView BackgroundColor="ForestGreen" CornerRadius="15,15,15,0" HorizontalOptions="EndAndExpand" Padding="10, 5" >
+           <Label Text="Hola" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" />
+        </yummy:PancakeView>
+        <yummy:PancakeView BackgroundColor="MidnightBlue" CornerRadius="15,15,0,15" HorizontalOptions="StartAndExpand" Padding="10, 5" >
+           <Label Text="¿Cómo estás?" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" />
+        </yummy:PancakeView>
+        <yummy:PancakeView BackgroundColor="ForestGreen" CornerRadius="15,15,15,0" HorizontalOptions="EndAndExpand" Padding="10, 5" >
+           <Label Text="Muy bien. ¿Y tú cómo estás?" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" />
+        </yummy:PancakeView>
+        <yummy:PancakeView BackgroundColor="MidnightBlue" CornerRadius="15,15,0,15" HorizontalOptions="StartAndExpand" Padding="10, 5" >
+           <Label Text="Bien gracias." HorizontalTextAlignment="Center" TextColor="WhiteSmoke" />
+        </yummy:PancakeView>
+        <yummy:PancakeView BackgroundGradientStartColor="#6a1b9a" BackgroundGradientEndColor="#3d5afe" BackgroundGradientAngle="45"
+                           HorizontalOptions="FillAndExpand" CornerRadius="10" Margin="40, 20" Padding="20" >
+            <Label Text="Genial" TextColor="WhiteSmoke" FontSize="20" HorizontalTextAlignment="Center" />
+        </yummy:PancakeView>
+
+        <yummy:PancakeView HasShadow="True" Sides="5" BackgroundColor="Orange" BorderIsDashed="true" CornerRadius="10"
+                           HorizontalOptions="FillAndExpand" >
+            <StackLayout Padding="20, 80">
+                <Label Text="No sólo Frames" HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </yummy:PancakeView>
+    </StackLayout>
+</ContentPage>
